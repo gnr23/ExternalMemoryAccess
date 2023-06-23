@@ -32,7 +32,7 @@ int main()
     int ammoValue = 0;
 
     ReadProcessMemory(hProcess, (BYTE*)ammoAddr, &ammoValue, sizeof(ammoValue), nullptr);
-    std::cout << "Curent ammo = " << std::dec << ammoValue << std::endl;
+    std::cout << "Current ammo = " << std::dec << ammoValue << std::endl;
 
     //Write to it
     int newAmmo = 1337;
