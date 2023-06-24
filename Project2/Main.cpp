@@ -35,7 +35,7 @@ int main()
     std::cout << "Current ammo = " << std::dec << ammoValue << std::endl;
 
     //Write to it
-    int newAmmo = 1337;
+    int newAmmo = 1338;
     WriteProcessMemory(hProcess, (BYTE*)ammoAddr, &newAmmo, sizeof(newAmmo), nullptr);
 
     //Read out again
